@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Image Manipulation</title>
+    <meta charset="UTF-8">
+  </head>
+
+  <body>
+
+    <h1>Image Manipulation</h1>
+
+    <input type="file" accept="image/*" id="fileInput">
+    <button onclick="startProcessImage()">Process</button>
+    <label for="blueRange" id="labelRange"></label>
+    <input type="range" id="blueRange" name="blueRange" min="0" max="255">
+
+    <div style="margin: 100px 0px">
+      <span id="spinner" style="display: inline-block">This should be spinning...</span>
+    </div>
+
+    <div>
+      <canvas id="canvas" width="0" height="0"></canvas>
+    </div>
+
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>
